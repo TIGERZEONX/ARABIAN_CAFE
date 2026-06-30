@@ -1,0 +1,16 @@
+.row td{
+
+padding:18px;
+
+border-bottom:
+1px solid #E5E7EB;
+
+font-size:14px;
+
+}
+
+.row:hover{
+
+background:#F6F8FA;
+
+}

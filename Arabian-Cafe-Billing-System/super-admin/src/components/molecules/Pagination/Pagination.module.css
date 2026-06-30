@@ -1,0 +1,21 @@
+.pagination{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.pagination span{
+
+font-weight:600;
+
+color:#1F2937;
+
+}

@@ -1,0 +1,15 @@
+.report{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:24px;
+
+}

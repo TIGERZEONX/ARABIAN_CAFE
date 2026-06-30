@@ -1,0 +1,69 @@
+:root{
+
+--success:#22C55E;
+
+--warning:#F59E0B;
+
+--danger:#EF4444;
+
+}
+
+/* BADGE */
+
+.badge{
+
+padding:8px 14px;
+
+border-radius:999px;
+
+font-size:13px;
+
+font-weight:600;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+/* ACTIVE */
+
+.active{
+
+background:#DCFCE7;
+
+color:#166534;
+
+}
+
+/* PENDING */
+
+.pending{
+
+background:#FEF3C7;
+
+color:#92400E;
+
+}
+
+/* DANGER */
+
+.danger{
+
+background:#FEE2E2;
+
+color:#991B1B;
+
+}
+
+/* INFO */
+
+.info{
+
+background:#E0F2FE;
+
+color:#0369A1;
+
+}
