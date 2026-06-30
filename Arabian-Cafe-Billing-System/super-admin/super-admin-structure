@@ -1,0 +1,165 @@
+super-admin/
+│
+├── public/
+│   ├── images/
+│   ├── icons/
+│   ├── logos/
+│   └── favicon.ico
+│
+├── src/
+│
+│   ├── assets/
+│   │   ├── images/
+│   │   ├── icons/
+│   │   ├── fonts/
+│   │   └── styles/
+│   │
+│   ├── components/
+│   │
+│   │   ├── atoms/
+│   │   │   ├── Button/
+│   │   │   ├── Input/
+│   │   │   ├── Card/
+│   │   │   ├── Badge/
+│   │   │   ├── Avatar/
+│   │   │   ├── Icon/
+│   │   │   ├── Typography/
+│   │   │   └── Loader/
+│   │   │
+│   │   ├── molecules/
+│   │   │   ├── SearchBar/
+│   │   │   ├── TableRow/
+│   │   │   ├── FilterBar/
+│   │   │   ├── FormField/
+│   │   │   ├── Pagination/
+│   │   │   └── StatusCard/
+│   │   │
+│   │   ├── organisms/
+│   │   │   ├── Sidebar/
+│   │   │   ├── Header/
+│   │   │   ├── Navbar/
+│   │   │   ├── DashboardStats/
+│   │   │   ├── BillingTable/
+│   │   │   ├── RevenueChart/
+│   │   │   ├── UserManagement/
+│   │   │   ├── BranchTable/
+│   │   │   └── SettingsForm/
+│   │   │
+│   │   ├── templates/
+│   │   │   ├── DashboardTemplate/
+│   │   │   ├── AuthTemplate/
+│   │   │   ├── ReportTemplate/
+│   │   │   └── SettingsTemplate/
+│   │   │
+│   │   └── shared/
+│   │       ├── Modal/
+│   │       ├── Toast/
+│   │       ├── EmptyState/
+│   │       └── ConfirmDialog/
+│
+│   ├── pages/
+│   │
+│   │   ├── Dashboard/
+│   │   │   └── Dashboard.jsx
+│   │   │
+│   │   ├── Billing/
+│   │   │   ├── InvoiceList.jsx
+│   │   │   ├── Transactions.jsx
+│   │   │   └── PaymentHistory.jsx
+│   │   │
+│   │   ├── Branches/
+│   │   │   ├── BranchList.jsx
+│   │   │   └── AddBranch.jsx
+│   │   │
+│   │   ├── Restaurants/
+│   │   │   ├── CafeList.jsx
+│   │   │   └── CafeDetails.jsx
+│   │   │
+│   │   ├── Users/
+│   │   │   ├── Admins.jsx
+│   │   │   ├── Staff.jsx
+│   │   │   └── Roles.jsx
+│   │   │
+│   │   ├── Reports/
+│   │   │   ├── SalesReport.jsx
+│   │   │   ├── RevenueReport.jsx
+│   │   │   └── TaxReport.jsx
+│   │   │
+│   │   ├── Subscription/
+│   │   │   ├── Plans.jsx
+│   │   │   └── BillingCycle.jsx
+│   │   │
+│   │   ├── Notifications/
+│   │   │   └── Notifications.jsx
+│   │   │
+│   │   ├── Settings/
+│   │   │   ├── General.jsx
+│   │   │   ├── Security.jsx
+│   │   │   ├── Theme.jsx
+│   │   │   └── Integrations.jsx
+│   │   │
+│   │   ├── Auth/
+│   │   │   ├── Login.jsx
+│   │   │   ├── ForgotPassword.jsx
+│   │   │   └── ResetPassword.jsx
+│   │   │
+│   │   └── NotFound/
+│   │       └── NotFound.jsx
+│
+│   ├── layouts/
+│   │   ├── DashboardLayout.jsx
+│   │   ├── AuthLayout.jsx
+│   │   └── BlankLayout.jsx
+│
+│   ├── routes/
+│   │   ├── AppRoutes.jsx
+│   │   ├── PrivateRoute.jsx
+│   │   └── routeConfig.js
+│
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── authService.js
+│   │   ├── billingService.js
+│   │   ├── reportService.js
+│   │   └── branchService.js
+│
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   ├── usePagination.js
+│   │   ├── useDebounce.js
+│   │   └── useApi.js
+│
+│   ├── store/
+│   │   ├── slices/
+│   │   ├── actions/
+│   │   ├── reducers/
+│   │   └── index.js
+│
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── ThemeContext.jsx
+│
+│   ├── constants/
+│   │   ├── colors.js
+│   │   ├── apiRoutes.js
+│   │   └── roles.js
+│
+│   ├── utils/
+│   │   ├── formatCurrency.js
+│   │   ├── formatDate.js
+│   │   ├── validators.js
+│   │   └── helpers.js
+│
+│   ├── theme/
+│   │   ├── colors.js
+│   │   ├── typography.js
+│   │   ├── spacing.js
+│   │   └── index.js
+│
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .env
+├── package.json
+├── vite.config.js
+└── README.md
