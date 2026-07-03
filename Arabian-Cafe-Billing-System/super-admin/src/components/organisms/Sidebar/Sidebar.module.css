@@ -1,52 +1,114 @@
-.sidebar{
-
-width:280px;
-
-height:100vh;
-
-background:#FFFFFF;
-
-padding:30px;
-
-border-right:
-1px solid #E5E7EB;
-
+.sidebar {
+    width: 260px;
+    min-width: 260px;
+    height: 100vh;
+    background: var(--primary-dark);
+    /* Rich Dark Brown #6F4227 */
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
-.logo{
-
-font-size:24px;
-
-font-weight:800;
-
-color:#A96A42;
-
-margin-bottom:40px;
-
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 18px;
+    letter-spacing: 0.5px;
 }
 
-.item{
-
-width:100%;
-
-padding:14px;
-
-margin-bottom:10px;
-
-border:none;
-
-background:none;
-
-text-align:left;
-
-border-radius:14px;
-
-cursor:pointer;
-
+.item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    color: var(--primary-light);
+    /* Warm Cream #F4E5D8 */
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    margin-bottom: 6px;
 }
 
-.item:hover{
+.item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
 
-background:#F4E5D8;
+.activeItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background: var(--primary);
+    /* Branded Brown #A96A42 */
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
+.group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px;
+    background: none;
+    border: none;
+    color: var(--primary-light);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.group:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+.children {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.child {
+    padding: 10px 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.child:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+}
+
+.activeChild {
+    padding: 10px 14px;
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
 }

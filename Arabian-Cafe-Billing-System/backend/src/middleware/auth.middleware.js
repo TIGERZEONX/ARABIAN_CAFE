@@ -20,7 +20,7 @@ const authenticate = async (req, res, next) => {
             process.env.JWT_SECRET
         );
 
-        const user = await User.findById(decoded.id).select("-password");
+        const user = await User.findById(decoded.id).populate("role").select("-password");
 
         if (!user) {
             return res.status(401).json({

@@ -1,0 +1,57 @@
+.card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#fff;
+    padding:20px 24px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+}
+
+.left,
+.right{
+    display:flex;
+    gap:12px;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    border-radius:8px;
+    padding:12px 20px;
+    font-size:14px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.primary{
+    background:#2563EB;
+    color:white;
+}
+
+.primary:hover{
+    background:#1D4ED8;
+}
+
+.secondary{
+    background:#F3F4F6;
+    color:#111827;
+}
+
+.secondary:hover{
+    background:#E5E7EB;
+}
+
+.cancel{
+    background:#EF4444;
+    color:white;
+}
+
+.cancel:hover{
+    background:#DC2626;
+}

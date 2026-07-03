@@ -9,7 +9,6 @@ export default function DashboardTemplate({
   return (
     <div className={styles.layout}>
 
-      <Sidebar />
 
       <main className={styles.content}>
 

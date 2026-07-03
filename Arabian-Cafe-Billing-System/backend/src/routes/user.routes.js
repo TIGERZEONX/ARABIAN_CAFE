@@ -7,6 +7,22 @@ const userController = require("../controllers/user.controller");
 const authenticate = require("../middleware/auth.middleware");
 const authorize = require("../middleware/role.middleware");
 
+// Get All Roles
+router.get(
+    "/roles",
+    authenticate,
+    authorize("SUPER_ADMIN"),
+    async (req, res, next) => {
+        try {
+            const Role = require("../models/Role");
+            const roles = await Role.find();
+            res.json({ success: true, data: roles });
+        } catch (error) {
+            next(error);
+        }
+    }
+);
+
 // Get All Users
 router.get(
     "/",

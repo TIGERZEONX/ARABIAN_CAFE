@@ -3,11 +3,10 @@ const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 
 const getAllUsers = async () => {
-    return await User.find().select("-password");
+    return await User.find().populate("role").select("-password");
 };
-
 const getUserById = async (id) => {
-    return await User.findById(id).select("-password");
+    return await User.findById(id).populate("role").select("-password");
 };
 
 const createUser = async (data) => {

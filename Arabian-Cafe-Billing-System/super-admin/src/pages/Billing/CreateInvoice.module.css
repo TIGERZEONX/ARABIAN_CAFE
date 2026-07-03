@@ -1,0 +1,223 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.panel {
+    background: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    height: fit-content;
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.header p {
+    color: var(--text-light);
+}
+
+.categoriesBar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border);
+}
+
+.categoryBtn {
+    padding: 10px 20px;
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.categoryBtnActive {
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.menuCard {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.menuCard:hover {
+    border-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.menuCard h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.menuCard p {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.variationGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.variationBtn {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 12px;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.variationBtn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.addBtn {
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.addBtn:hover {
+    background: var(--primary-dark);
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.formField label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.formField input,
+.formField select {
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.cartBox {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--bg);
+}
+
+.breakdown {
+    background: var(--bg);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.breakdownRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.checkoutActions {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 15px;
+}
+
+.checkoutActions select,
+.checkoutActions button {
+    padding: 14px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.checkoutActions select {
+    border: 1px solid var(--border);
+    background: white;
+}
+
+.checkoutActions button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.checkoutActions button:hover {
+    background: var(--primary-dark);
+}

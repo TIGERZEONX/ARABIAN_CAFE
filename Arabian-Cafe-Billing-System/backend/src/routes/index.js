@@ -1,5 +1,4 @@
 const express = require("express");
-
 const router = express.Router();
 
 // ==================================
@@ -18,15 +17,30 @@ router.use("/users", require("./user.routes"));
 router.use("/categories", require("./category.routes"));
 
 // ==================================
-// TODO: Enable these after creating the files
+// Menu Management
 // ==================================
+router.use("/menu", require("./menu.routes"));
 
-// router.use("/menu", require("./menu.routes"));
-// router.use("/tables", require("./table.routes"));
-// router.use("/orders", require("./order.routes"));
-// router.use("/bills", require("./bill.routes"));
-// router.use("/payments", require("./payment.routes"));
-// router.use("/dashboard", require("./dashboard.routes"));
-// router.use("/reports", require("./report.routes"));
+// ==================================
+// Table Seating Management
+// ==================================
+router.use("/tables", require("./table.routes"));
+
+// ==================================
+// Active Orders Management
+// ==================================
+router.use("/orders", require("./order.routes"));
+
+// ==================================
+// Restaurant & Tax Settings
+// ==================================
+router.use("/settings", require("./setting.routes"));
+
+// ==================================
+// Analytics Dashboard
+// ==================================
+router.use("/dashboard", require("./dashboard.routes"));
+
+router.use("/inventory", require("./inventory.routes"));
 
 module.exports = router;
