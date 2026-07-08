@@ -10,6 +10,7 @@ router.use("/auth", require("./auth.routes"));
 // User Management
 // ==================================
 router.use("/users", require("./user.routes"));
+router.use("/customers", require("./customer.routes"));
 
 // ==================================
 // Category Management

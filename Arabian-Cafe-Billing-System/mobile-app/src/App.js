@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StatusBar } from 'react-native';
 import { Provider as StoreProvider } from 'react-redux';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import axios from 'axios';
 
 import store from './store/store';
 import RootNavigator from './navigation/RootNavigator';
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StoreProvider store={store}>
-        <SafeAreaProvider>
+        <SafeAreaProvider style={{ flex: 1 }}>
           {/* Wrap everything in all the contexts */}
           <ThemeProvider>
             <AuthProvider>

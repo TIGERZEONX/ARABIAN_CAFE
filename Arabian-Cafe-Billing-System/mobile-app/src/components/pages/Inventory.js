@@ -136,6 +136,7 @@ const Inventory = () => {
           item?._id ? item._id.toString() : (item?.id ? item.id.toString() : index.toString())
         }
         showsVerticalScrollIndicator={false}
+        scrollEnabled={false}
         contentContainerStyle={styles.list}
       />
     </DashboardLayout>

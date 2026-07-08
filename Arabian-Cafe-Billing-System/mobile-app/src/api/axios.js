@@ -1,11 +1,12 @@
 import axios from "axios";
-
+import AsyncStorage from "@react-native-async-storage/async-storage";
 // ==============================
 // Base URL
 // ==============================
 
-// Development
-const DEV_BASE_URL = "http://192.168.0.13:5000/api";
+// Development (Using Wi-Fi IP instead of localhost to prevent USB tunnel drops)
+const DEV_BASE_URL = "http://10.171.199.89:5000/api";
+
 
 
 // Production
@@ -28,12 +29,15 @@ const api = axios.create({
 
 api.interceptors.request.use(
   async (config) => {
-    // Example:
-    // const token = await AsyncStorage.getItem("token");
-    //
-    // if (token) {
-    //   config.headers.Authorization = `Bearer ${token}`;
-    // }
+    try {
+      const token = await AsyncStorage.getItem("ACCESS_TOKEN");
+      
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
+    } catch (e) {
+      console.log("Error getting token", e);
+    }
 
     return config;
   },

@@ -13,11 +13,11 @@ async function seedAdmin() {
 
         console.log("✅ MongoDB Connected");
 
-        let role = await Role.findOne({ name: "admin" });
+        let role = await Role.findOne({ name: "Super Admin" });
 
         if (!role) {
             role = await Role.create({
-                name: "admin"
+                name: "Super Admin"
             });
 
             console.log("✅ Admin Role Created");

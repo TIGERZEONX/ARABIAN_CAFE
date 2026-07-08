@@ -149,6 +149,7 @@ const Customers = () => {
         }
         renderItem={renderItem}
         showsVerticalScrollIndicator={false}
+        scrollEnabled={false}
         contentContainerStyle={styles.list}
       />
     </DashboardLayout>
